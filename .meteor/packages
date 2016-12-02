@@ -23,6 +23,8 @@ insecure@1.0.7                # Allow all DB writes from clients (for prototypin
 
 meteortoys:allthings            # Meteor-designed development tools
 aldeed:collection2              # Adds allow/deny functionality to Mongo DB collections through SimpleSchemas
+aldeed:autoform                 # Adds quickform templates for fast generation of basic forms.
+
 kadira:flow-router
 kadira:blaze-layout
 accounts-ui
