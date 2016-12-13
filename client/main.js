@@ -1,9 +1,9 @@
-import {Template} from 'meteor/templating';
-import {ReactiveVar} from 'meteor/reactive-var';
+import {Template} from "meteor/templating";
 
-import './layout/partials/Login.html';
+import "./layout/partials/Login.html";
 
 Template.Login.onCreated(function loginOnCreated() {
+    "use strict";
     return 0;
 });
 

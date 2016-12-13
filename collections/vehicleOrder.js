@@ -1,11 +1,12 @@
+import {Mongo} from "meteor/mongo";
 /**
  * Created by pc on 12/1/2016.
  */
-Vehicles = new Mongo.Collection('vehicles');
-Colors = new Mongo.Collection('colors');
-Models = new Mongo.Collection('models');
+let Vehicles = new Mongo.Collection("vehicles");
+let Colors = new Mongo.Collection("colors");
+let Models = new Mongo.Collection("models");
 
-VehiclesSchema = new SimpleSchema({
+const VehiclesSchema = new SimpleSchema({
     owner: {
         label: "Owner",
         type: String,
@@ -30,7 +31,7 @@ VehiclesSchema = new SimpleSchema({
     }
 });
 
-ColorsSchema = new SimpleSchema({
+const ColorsSchema = new SimpleSchema({
     name: {
         label: "Name",
         type: String,
@@ -50,7 +51,7 @@ ColorsSchema = new SimpleSchema({
     }
 });
 
-ModelsSchema = new SimpleSchema({
+const ModelsSchema = new SimpleSchema({
     name: {
         label: "Name",
         type: String,
