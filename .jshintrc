@@ -3,7 +3,13 @@
   // See http://jshint.com/docs/ for more details
 
   /*
-  These comments must be removed for this file to be used in a CLI version of JsHint.
+  ======================================================= NOTE =======================================================
+
+    The comments within this file MUST BE REMOVED for this file to be used independently of any Software that DOES NOT
+    remove them automatically. JSON doesn't natively support the usuage of comments, hence the reason any attempt to use
+    this file as it stands will results in errors.
+
+  ======================================================= NOTE =======================================================
   */
   "maxerr"        : 50,       // {int} Maximum error before stopping
 
