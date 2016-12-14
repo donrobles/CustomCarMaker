@@ -99,7 +99,6 @@
   // Additional predefined global variables set to 'true' to allow JSHint to overlook them.
   "globals": {
     "Roles": true,
-    "Accounts": true,
     "FlowRouter": true,
     "BlazeLayout": true,
     "SimpleSchema": true
