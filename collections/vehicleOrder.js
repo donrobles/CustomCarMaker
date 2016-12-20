@@ -6,6 +6,12 @@ let Vehicles = new Mongo.Collection("vehicles");
 let Colors = new Mongo.Collection("colors");
 let Models = new Mongo.Collection("models");
 
+let Posts = new Mongo.Collection("posts");
+
+const PostsSchema = new SimpleSchema({
+
+});
+
 const VehiclesSchema = new SimpleSchema({
     owner: {
         label: "Owner",
@@ -68,3 +74,4 @@ const ModelsSchema = new SimpleSchema({
 Vehicles.attachSchema(VehiclesSchema);
 Models.attachSchema(ModelsSchema);
 Colors.attachSchema(ColorsSchema);
+Posts.attachSchema(PostsSchema);

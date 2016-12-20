@@ -1,5 +1,35 @@
-<template name="Welcome">
-    <h1 class="welcome-header">Welcome Whoever You Are!!!</h1>
+<body>
 
-    <button class="enter-site"><a href="/login">Enter Site</a></button>
+{{#onlyIfLoggedIn}}
+    {{> editPost}}
+{{/onlyIfLoggedIn}}
+
+</body>
+
+<template name="onlyIfLoggedIn">
+    {{#if authInProcess}}
+        <p>loading ...</p>
+    {{else}}
+        {{#if canShow}}
+            {{> UI.contentBlock }}
+        {{else}}
+            <p>You are not authorized to view this page.</p>
+            <p>Please <a href="/login">login</a> to view this page</p>
+        {{/if}}
+    {{/if}}
 </template>
+
+<template name="editPost">
+    {{#if authInProcess}}
+        <p>loading ...</p>
+    {{else}}
+        {{#if canShow}}
+            <p>This is the area for editing the post</p>
+        {{else}}
+            <p>You are not authorized to view this page.</p>
+            <p>Please <a href="/login">login</a> to view this page</p>
+        {{/if}}
+    {{/if}}
+</template>
+
+
