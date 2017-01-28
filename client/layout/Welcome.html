@@ -1,35 +1,8 @@
 <body>
-
-{{#onlyIfLoggedIn}}
-    {{> editPost}}
-{{/onlyIfLoggedIn}}
+<h1>Welcome page.</h1>
 
 </body>
 
-<template name="onlyIfLoggedIn">
-    {{#if authInProcess}}
-        <p>loading ...</p>
-    {{else}}
-        {{#if canShow}}
-            {{> UI.contentBlock }}
-        {{else}}
-            <p>You are not authorized to view this page.</p>
-            <p>Please <a href="/login">login</a> to view this page</p>
-        {{/if}}
-    {{/if}}
-</template>
 
-<template name="editPost">
-    {{#if authInProcess}}
-        <p>loading ...</p>
-    {{else}}
-        {{#if canShow}}
-            <p>This is the area for editing the post</p>
-        {{else}}
-            <p>You are not authorized to view this page.</p>
-            <p>Please <a href="/login">login</a> to view this page</p>
-        {{/if}}
-    {{/if}}
-</template>
 
 
