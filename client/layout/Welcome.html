@@ -1,7 +1,12 @@
-<body>
-<h1>Welcome page.</h1>
+<template name="Welcome">
+    <h1>Welcome page.</h1>
+    {{#if isCustomer}}
+        <h2>You're a Customer</h2>
+    {{else}}
+        <h2>You're NOT a Customer</h2>
+    {{/if}}
+</template>
 
-</body>
 
 
 
