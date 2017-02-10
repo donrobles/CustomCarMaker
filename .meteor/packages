@@ -31,4 +31,6 @@ kadira:blaze-layout
 accounts-ui
 accounts-password
 alanning:roles                  # Provides Roles, Permissions, and Groups tags for users.
-gwendall:auth-client-callbacks  # Adds client-side Accounts.onLogin and Accounts.onLogout
+gwendall:auth-client-callbacks  # Adds client-side Accounts.onLogin and Accounts.onLogout.
+
+session                         # Adds a Session global object for the client.
