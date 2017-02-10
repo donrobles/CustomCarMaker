@@ -3,15 +3,9 @@ import {Template} from "meteor/templating";
 (function () {
   "use strict";
 
-  Template.Welcome.helpers({
-    isCustomer: function () {
-      return false;
-    },
-    isAdmin: function () {
-      return false;
-    },
-    isSuperAdmin: function () {
-      return false;
+  Template.MainLayout.helpers({
+    userRole: function () {
+      return "Customer";
     }
   });
 
